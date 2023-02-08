@@ -549,6 +549,7 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int 
 
 #else
 	 signal(SIGCONT, mysigpause);
+	 signal(SIGINT,mysigterm);
 	 signal(SIGTERM, mysigterm);
 	 signal(SIGUSR1, mysigusr1);
 	 signal(SIGPIPE, SIG_IGN);
